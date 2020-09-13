@@ -1,5 +1,5 @@
 {% set name = "pyusb" %}
-{% set version = "1.0.2" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e9b72cc4a4205ca64fbf1f3fff39a335512166c151ad103e55c8223ac147362
+  sha256: d69ed64bff0e2102da11b3f49567256867853b861178689671a163d30865c298
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "Easy access to the host machine's Universal Serial Bus system in Python."
+  summary: Easy access to the host machine's Universal Serial Bus system in Python.
 
   description: |
     PyUSB offers easy USB devices communication in Python.
