@@ -29,8 +29,9 @@ test:
   imports:
     - usb
   commands:
-    - pip list
-    # The pip version can be out of date
+    # The pip version can reported incorrectly if setuptools_scm isn't available
+    # at build time
+    # https://github.com/conda-forge/pyusb-feedstock/issues/3
     - pip list | grep -i {{ name }} | grep {{ version }}
 
 about:
