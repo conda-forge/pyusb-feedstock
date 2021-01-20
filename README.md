@@ -5,7 +5,7 @@ Home: https://github.com/pyusb/pyusb
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyusb-feedstock/blob/master/LICENSE.txt)
 
 Summary: Easy access to the host machine's Universal Serial Bus system in Python.
 
