@@ -49,12 +49,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - hmaarrfk
+    - ianaobi
 
-  skip-lints:
-    - invalid_url
-
-  anaconda-services:
-    ref: https://anaconda.zendesk.com/agent/tickets/33492
-    recipe-maintainers:
-      - ianaobi
